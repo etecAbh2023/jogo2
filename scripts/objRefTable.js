@@ -1,0 +1,73 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.TiledBg,
+		C3.Plugins.Sprite,
+		C3.Behaviors.solid,
+		C3.Behaviors.scrollto,
+		C3.Behaviors.Platform,
+		C3.Plugins.Touch,
+		C3.Plugins.Text,
+		C3.Plugins.Spritefont2,
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Text.Acts.SetText
+	];
+};
+self.C3_JsPropNameTable = [
+	{PlanoDeFundoEmBlocos: 0},
+	{Sólido: 0},
+	{Sprite: 0},
+	{CentrarEm: 0},
+	{Plataforma: 0},
+	{personagem: 0},
+	{Toque: 0},
+	{Texto: 0},
+	{Sprite3: 0},
+	{Texto2: 0},
+	{Sprite4: 0},
+	{Sprite5: 0},
+	{FonteDeSprites: 0},
+	{Sprite6: 0},
+	{FonteDeSprites2: 0},
+	{FonteDeSprites3: 0},
+	{FonteDeSprites4: 0},
+	{Sprite7: 0},
+	{moeda: 0},
+	{variavelPonto: 0},
+	{Sprite2: 0},
+	{Sprite8: 0},
+	{Texto3: 0},
+	{Sprite9: 0},
+	{ponto: 0}
+];
+
+self.InstanceType = {
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	personagem: class extends self.ISpriteInstance {},
+	Toque: class extends self.IInstance {},
+	Texto: class extends self.ITextInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Texto2: class extends self.ITextInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	FonteDeSprites: class extends self.ISpriteFontInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	FonteDeSprites2: class extends self.ISpriteFontInstance {},
+	FonteDeSprites3: class extends self.ISpriteFontInstance {},
+	FonteDeSprites4: class extends self.ISpriteFontInstance {},
+	Sprite7: class extends self.ISpriteInstance {},
+	moeda: class extends self.ISpriteInstance {},
+	variavelPonto: class extends self.ITextInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite8: class extends self.ISpriteInstance {},
+	Texto3: class extends self.ITextInstance {},
+	Sprite9: class extends self.ISpriteInstance {}
+}
